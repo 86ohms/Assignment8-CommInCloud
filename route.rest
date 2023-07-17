@@ -1,0 +1,31 @@
+// Get all entries back from db
+GET http://localhost:3000/thermocouple
+
+###
+// Get one entry back via ID
+GET http://localhost:3000/thermocouple/11
+
+
+###
+
+POST http://localhost:3000/thermocouple/
+Content-Type: application/json
+
+{
+    "thermSN": "1234567890",
+    "thermSetPoint": 73
+    // "thermUpdateDate": "sdfsf"
+}
+
+###
+
+DELETE http://localhost:3000/thermocouple/64b565dfcf779ad287744a6c
+
+###
+
+PATCH  http://localhost:3000/thermocouple/64b4a731753104674e11eae1
+Content-Type: application/json
+
+{
+  "thermSetPoint": 76
+}
